@@ -21,13 +21,16 @@ Steps:
 
 ## Usage
 
-1. Enter the periods and amounts in ```config.py```.
+1. Enter the periods and amounts in ```config.py```
 2. Save the file
 3. Run the cashflow.py script
    1. Windows: ```.\run``` in powershell
    2. Mac: ```. run.sh``` in Terminal
-4. By default, the arrows are annotated by the cash amounts. If you want to override any particular arrow annotation with your own, add it to the ```annotations``` structure in ```config.py```.
-4. When you run the script, the output image is also saved as ```cashflow.png``` in that directory.
+4. By default, the arrows are annotated by the cash amounts
+   - If you want to override any particular arrow annotation with your own, add it to the ```annotations``` structure in ```config.py```
+6. When you run the script, the timestamped output image is also saved in the ```cashflow_images``` directory
+   - The last 5 images generated are maintained
+   - You don't need to create the folder, if it doesn't find the folder the script will create that automatically
 
 (Note: You have the option of running the script manually using ```python -m cashflow```, but ensure you activate the virtual environment created by the setup script.)
 
