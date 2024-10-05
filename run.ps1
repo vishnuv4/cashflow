@@ -1,1 +1,1 @@
-.venv\Scripts\python.exe -m scripts.cashflow
+.venv\Scripts\python.exe -m cashflow

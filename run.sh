@@ -1,1 +1,1 @@
-.venv/bin/python -m scripts.cashflow
+.venv/bin/python -m cashflow
