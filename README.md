@@ -27,95 +27,30 @@ If you're running into problems, with setup or using it, drop me an email (vishn
 
 Open a terminal into the same folder that has the .ps1 or .sh scripts. You can control this tool from that terminal.
 
-1. Enter the periods and amounts in ```config.py```
-2. Save the file
-3. Run the cashflow.py script
+1. Start the application
    1. Windows: ```.\run``` in powershell
    2. Mac: ```. run.sh``` in Terminal
-4. By default, the arrows are annotated by the cash amounts
-   - If you want to override any particular arrow annotation with your own, add it to the ```annotations``` structure in ```config.py```
-6. When you run the script, the timestamped output image is also saved in the ```cashflow_images``` directory
-   - The last 5 images generated are maintained
-   - You don't need to create the folder, if it doesn't find the folder the script will create that automatically
-
-(Note: You have the option of running the script manually using ```python -m cashflow```, but ensure you activate the virtual environment created by the setup script.)
+2. A webpage should open automatically with two text boxes
+3. Enter the periods and amounts in the first text box, separated by commas
+    1. There should only be one pair separated by commas on each line.
+2. By default, the arrows are annotated by the cash amounts. If you want to override that for any period, add it to the second text box in the same format.
+4. Press the "Plot graph" button
+5. When you run the script,
+   - The most recent image is saved as ```display/cashflow.png```
+   - The last 5 images generated are timestamped and saved in the ```cashflow_images/``` folder
+   - You don't need to create these folders, if it doesn't find the folder the script will create that automatically
+6. When you are done, press Ctrl+C in the terminal you had open.
 
 ## Examples
 
-For each example the ```config.py``` contents and the output it produces are shown.
-
 ### #1
-
-```
-config = {
-    "0": -100,
-    "12": 300,
-}
-
-annotations = {
-    "12": "(F/P, i%, N)"
-}
-```
-
-![img1](https://github.com/user-attachments/assets/e0560d7e-965d-44ce-895f-f995e0680c92)
+![img1](https://github.com/user-attachments/assets/f3e1e6c2-be09-4a80-a88f-433a2e7cec12)
 
 ### #2
-
-```
-config = {
-    "0": 200,
-    "1": 300,
-    "2": -100,
-    "5": -110,
-    "7": 100,
-    "10": 1000
-}
-
-annotations = {
-
-}
-```
-
-![img2](https://github.com/user-attachments/assets/b00a71d9-4014-4a0d-be12-ba5b5b598f4f)
+![img2](https://github.com/user-attachments/assets/784a9b01-300b-48a3-a5bb-c48ccddac226)
 
 ### #3
-
-```
-config = {
-    "-2": 100,
-    "-1": 150,
-    "0": 200,
-    "1": -200
-}
-
-annotations = {
-
-}
-```
-
-![img3](https://github.com/user-attachments/assets/772682df-df06-4bc4-b589-76619a131cba)
-
+![img3](https://github.com/user-attachments/assets/b3101ccd-82f1-4f8a-bf9a-9aa3a6f4c49b)
 
 ### #4
-
-```
-config = {
-    "0": 0,
-    "1": 100,
-    "2": 200,
-    "3": 300,
-    "4": 400,
-    "5": 500,
-    "6": 600,
-}
-
-annotations = {
-    "1": "A",
-    "2": "2A",
-    "3": "3A",
-    "4": "4A",
-    "5": "5A",
-    "6": "6A",
-}
-```
-![img4](https://github.com/user-attachments/assets/404355e6-e042-461c-ba47-ec4d4df2c36c)
+![img4](https://github.com/user-attachments/assets/06b0eaec-5c65-4659-b6cb-e318f41b0144)
