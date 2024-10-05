@@ -1,4 +1,5 @@
 import os
+import webbrowser
 import time
 import matplotlib.pyplot as plt
 from config import config, annotations
@@ -47,7 +48,7 @@ if __name__ == "__main__":
     plt.xlabel('Period')
     plt.ylabel('Cash Flow')
     plt.title('Cash Flow Diagram')
-    plt.xticks(range(min_period, max_period + 1))  # Ensure all periods are marked on the x-axis
+    plt.xticks(range(min_period, max_period + 1))
     plt.axhline(0, color='black', linewidth=0.5)
 
     plt.grid(True, axis='x', linestyle='--')
@@ -61,5 +62,10 @@ if __name__ == "__main__":
     timestamp = time.strftime("%Y%m%d-%H%M%S")
     image_path = os.path.join(image_folder, f"cashflow_{timestamp}.png")
     
+    plt.savefig("display/cashflow.png")
     plt.savefig(image_path)
-    plt.show()
+    html_file = os.path.abspath("display/cashflow.html")
+    webbrowser.open(f"file://{html_file}")
+    
+    # Uncomment this to use matplotlib's default viewer
+    # plt.show()
