@@ -4,7 +4,7 @@ This is a tool to easily generate cashflow diagrams. I made it because I got sic
 
 ## Requirements
 
-Uses Python and matplotlib. It was developed and tested on Python 3.10 but lower versions might work too.
+Uses Python and matplotlib. It was developed and tested on Python 3.10 but lower/higher versions might work too.
 Ensure your terminal can pick up python by running ```python --version``` in a terminal window and ensuring you get some output.
 
 Note: this was developed on Windows so if you're using a Mac it may or may not be a bit janky. It should work just the same, but I haven't tested it. 
