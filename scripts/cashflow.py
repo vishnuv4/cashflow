@@ -1,7 +1,7 @@
 import os
 import time
 import matplotlib.pyplot as plt
-from config import config, annotations
+from scripts.config import config, annotations
 
 image_folder = "cashflow_images"
 
