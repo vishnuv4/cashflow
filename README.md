@@ -1,4 +1,4 @@
-# Cashflow Diagrams
+# Cashflow Diagrams README
 
 This is a tool to easily generate cashflow diagrams. I made it because I got sick of drawing them on draw.io.
 
@@ -7,7 +7,7 @@ This is a tool to easily generate cashflow diagrams. I made it because I got sic
 Uses Python and matplotlib. It was developed and tested on Python 3.10 but lower versions might work too.
 Ensure your terminal can pick up python by running ```python --version``` and ensuring you get some output.
 
-Note: this was developed on Windows so the Mac stuff may be a bit janky. It should work just the same, but I haven't tested it - if you're running into problems, open up an issue on GitHub.
+Note: this was developed on Windows so if you're using a Mac it may or may not be a bit janky. It should work just the same, but I haven't tested it. If you're running into problems, open up an issue on GitHub.
 
 Steps:
 
@@ -36,7 +36,7 @@ Steps:
 
 ## Examples
 
-To get you started, here are some examples. For each example the ```config.py``` contents and the output it produces are shown.
+For each example the ```config.py``` contents and the output it produces are shown.
 
 ### #1
 
