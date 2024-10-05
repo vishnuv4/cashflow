@@ -36,7 +36,7 @@ Open a terminal into the same folder that has the .ps1 or .sh scripts. You can c
    - The last 5 images generated are maintained
    - You don't need to create the folder, if it doesn't find the folder the script will create that automatically
 
-(Note: You have the option of running the script manually using ```python -m scripts.cashflow```, but ensure you activate the virtual environment created by the setup script.)
+(Note: You have the option of running the script manually using ```python -m cashflow```, but ensure you activate the virtual environment created by the setup script.)
 
 ## Examples
 
