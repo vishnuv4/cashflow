@@ -55,8 +55,7 @@ annotations = {
 }
 ```
 
-![img1](images/img1.png)
-
+![img1](https://github.com/user-attachments/assets/e0560d7e-965d-44ce-895f-f995e0680c92)
 
 ### #2
 
@@ -75,7 +74,7 @@ annotations = {
 }
 ```
 
-![img2](images/img2.png)
+![img2](https://github.com/user-attachments/assets/b00a71d9-4014-4a0d-be12-ba5b5b598f4f)
 
 ### #3
 
@@ -92,7 +91,8 @@ annotations = {
 }
 ```
 
-![img3](images/img3.png)
+![img3](https://github.com/user-attachments/assets/772682df-df06-4bc4-b589-76619a131cba)
+
 
 ### #4
 
@@ -116,4 +116,4 @@ annotations = {
     "6": "6A",
 }
 ```
-![img4](images/img4.png)
+![img4](https://github.com/user-attachments/assets/404355e6-e042-461c-ba47-ec4d4df2c36c)
