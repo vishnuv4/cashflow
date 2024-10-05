@@ -23,6 +23,8 @@ If you're running into problems, with setup or using it, drop me an email (vishn
 
 ## Usage
 
+Open a terminal into the same folder that has the .ps1 or .sh scripts. You can control this tool from that terminal.
+
 1. Enter the periods and amounts in ```config.py```
 2. Save the file
 3. Run the cashflow.py script
