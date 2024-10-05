@@ -26,12 +26,17 @@ for period, cashflow in zip(periods, cashflows):
             ha='center', va='bottom' if cashflow >= 0 else 'top')
 
 plt.xlabel('Period')
-plt.ylabel('Cash Flow Diagram')
-plt.title('Cash Flow')
+plt.ylabel('Cash Flow')
+plt.title('Cash Flow Diagram')
 plt.xticks(range(min_period, max_period + 1))  # Ensure all periods are marked on the x-axis
 plt.axhline(0, color='black', linewidth=0.5)
 
-plt.grid(True, axis='both', linestyle='--')
+plt.grid(True, axis='x', linestyle='--')
+
+plt.xlim(min_period - 1, max_period + 1)
+plt.ylim(min_value - 50, max_value + 50)
+
+ax.yaxis.set_ticks([])
 
 plt.savefig("cashflow.png")
 plt.show()
