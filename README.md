@@ -1,6 +1,6 @@
 # Cashflow Diagrams README
 
-This is a tool to easily generate cashflow diagrams. I made it because I got sick of drawing them on draw.io.
+This is a tool to easily generate neatly formatted cashflow diagrams. Much easier than using a software like draw.io.
 
 ## Requirements
 
