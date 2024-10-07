@@ -1,1 +1,1 @@
-.venv/bin/python -m cashflow
+conda run -n cashflow python -m cashflow

@@ -1,1 +1,1 @@
-.venv\Scripts\python.exe -m cashflow
+conda run -n cashflow python -m cashflow

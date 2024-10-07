@@ -132,6 +132,7 @@ TEMPLATE = """
         <h3>Data</h3>
         <ul>
           <li>The Data box accepts comma-separated pairs of period, value. For example: 1, 100 </li>
+          <li>The value determines how long the arrow will be.</li>
           <li>Different pairs on separate lines</li>
           <li>The order of the numbers in a pair matters - first item in a pair is the period, second is the value </li>
           <li>Order of the separate lines do not matter, you can have the entry for period 0 after the entry for period 1 and it'll be the same.</li>
@@ -139,11 +140,26 @@ TEMPLATE = """
         </ul>
         <h3>Annotations</h3>
         <ul>
+          <li>By default, each arrow is annotated with its value</li> 
+          <li>If you want to change that, you can use the annotations dialog box</li>
           <li>The Annotations box accepts comma-separated pairs of period, annotation. For example: 1, blah </li>
           <li>Different pairs on separate lines</li>
           <li>The order of the numbers in a pair matters - first item in a pair is the period, second is the annotation </li>
           <li>Order of the separate lines do not matter, you can have the entry for period 0 after the entry for period 1 and it'll be the same.</li>
           <li>Annotations replace the amount value on top of the arrow</li>
+        </ul>
+        <h3>Offline access</h3>
+        <ul>
+          <li>The most recently generated diagram is stored in the display folder</li>
+          <li>The last 5 diagrams are timestamped and saved in cashflow_images folder</li>
+        </ul>
+        <h3>Notes</h3>
+        <p>
+        Make sure you press Ctrl+C in the terminal that you started this webpage with.<br><br>
+        This webpage is merely a frontend for a local web server (hosted at <a href = http://127.0.0.1:5000>http://127.0.0.1:5000</a>)<br>
+        To shut down the backend once you're done so it doesn't run in the background, you need to press Ctrl+C to kill the process. Ignore errors you might see on the console window.<br><br>
+        This feature will possibly be added later.
+        </p>
       </div>
       <div class="form-container">
         <h1>Cashflow Diagram</h1>
