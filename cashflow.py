@@ -99,7 +99,7 @@ def get_user_input():
 def display_image(filename):
     return send_from_directory(f'{display_folder}', filename)
 
-TEMPLATE = '''
+TEMPLATE = """
 <!doctype html>
 <html lang="en">
   <head>
@@ -111,8 +111,13 @@ TEMPLATE = '''
         display: flex;
         padding-left: 50px;
       }
+      .info-container {
+        flex: 1;
+        padding-right: 10px;
+      }
       .form-container {
         flex: 1;
+        padding-left: 10px;
       }
       .image-container {
         flex: 1;
@@ -122,12 +127,30 @@ TEMPLATE = '''
   </head>
   <body>
     <div class="container">
+      <div class="info-container">
+        <h2>Usage</h2>
+        <h3>Data</h3>
+        <ul>
+          <li>The Data box accepts comma-separated pairs of period, value. For example: 1, 100 </li>
+          <li>Different pairs on separate lines</li>
+          <li>The order of the numbers in a pair matters - first item in a pair is the period, second is the value </li>
+          <li>Order of the separate lines do not matter, you can have the entry for period 0 after the entry for period 1 and it'll be the same.</li>
+          <li>The second item in the pair stands for the value, but more fundamentally it's just the size of the arrow. So if you don't want the sizes of arrows to be proportional to the value, you can pick any values you want in the Data box and provide the annotations you like. More details on annotations below</li>
+        </ul>
+        <h3>Annotations</h3>
+        <ul>
+          <li>The Annotations box accepts comma-separated pairs of period, annotation. For example: 1, blah </li>
+          <li>Different pairs on separate lines</li>
+          <li>The order of the numbers in a pair matters - first item in a pair is the period, second is the annotation </li>
+          <li>Order of the separate lines do not matter, you can have the entry for period 0 after the entry for period 1 and it'll be the same.</li>
+          <li>Annotations replace the amount value on top of the arrow</li>
+      </div>
       <div class="form-container">
         <h1>Cashflow Diagram</h1>
         <form method="post">
-          <label for="dict1">Data. Format: period, amount. New periods on new lines</label><br>
+          <label for="dict1">Data</label><br>
           <textarea id="dict1" name="dict1" rows="20" cols="50">{{ request.form.get('dict1', '') }}</textarea><br><br>
-          <label for="dict2">Annotations. Format: period, annotation. New periods on new lines</label><br>
+          <label for="dict2">Annotations</label><br>
           <textarea id="dict2" name="dict2" rows="20" cols="50">{{ request.form.get('dict2', '') }}</textarea><br><br>
           <input type="submit" value="Plot Graph">
         </form>
@@ -147,7 +170,7 @@ TEMPLATE = '''
     </div>
   </body>
 </html>
-'''
+"""
 
 def open_browser():
     webbrowser.open_new("http://127.0.0.1:5000/")
