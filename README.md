@@ -6,7 +6,7 @@ This is a tool to easily generate neatly formatted cashflow diagrams. Much easie
 
 Uses Python and matplotlib. Requires Python 3.10.
 
-Important note: If you're using an older version of python, you may run into set up issues (you can check by running ```python --version``` in a terminal). You can proceed with the setup and try seeing what it says, but if it doesn't work you can try installing python from here: [https://www.python.org/downloads/release/python-3100/]. I'll soon update this to work with conda and then there should be no cross-platform issues - it did work fine with conda when we tested it.
+Important note: If you're using an older version of python, you may run into set up issues (you can check by running ```python --version``` in a terminal). You can proceed with the setup and try seeing what it says, but if it doesn't work you can try installing python from here: [https://www.python.org/downloads/release/python-3100/]. I'll soon update this to work with conda and then there should be no cross-platform issues - it did work fine with conda on a Mac when we tested it.
 
 If you're running into problems, with setup or using it, drop me an email (vishnuv@seas.upenn.edu).
 
