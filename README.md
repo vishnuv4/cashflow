@@ -4,12 +4,9 @@ This is a tool to easily generate neatly formatted cashflow diagrams. Much easie
 
 ## Requirements
 
-Uses Python and matplotlib. It was developed and tested on Python 3.10 but lower/higher versions might work too.
+Uses Python and matplotlib. Requires Python 3.10.
 
-Ensure your terminal can pick up python by running ```python --version``` in a terminal window and ensuring you get some output.
-If it doesn't recognize the command, install python from here: [https://www.python.org/downloads/release/python-3100/]
-
-Note: this was developed on Windows so if you're using a Mac it may or may not be a bit janky. It should work just the same, but I haven't tested it. 
+Important note: If you're using an older version of python, you may run into set up issues (you can check by running ```python --version``` in a terminal). You can proceed with the setup and try seeing what it says, but if it doesn't work you can try installing python from here: [https://www.python.org/downloads/release/python-3100/]. I'll soon update this to work with conda and then there should be no cross-platform issues - it did work fine with conda when we tested it.
 
 If you're running into problems, with setup or using it, drop me an email (vishnuv@seas.upenn.edu).
 
@@ -21,7 +18,7 @@ If you're running into problems, with setup or using it, drop me an email (vishn
    2. Run the setup script using ```.\setup.ps1```
 3. For Mac:
    1. Open a bash terminal in this directory
-   2. Run the setup script using ```. setup.sh```
+   2. Run the setup script using ```sh setup.sh```
 
 ## Usage
 
@@ -29,7 +26,7 @@ Open a terminal into the same folder that has the .ps1 or .sh scripts. You can c
 
 1. Start the application
    1. Windows: ```.\run``` in powershell
-   2. Mac: ```. run.sh``` in Terminal
+   2. Mac: ```sh run.sh``` in Terminal
 2. A webpage should open automatically with two text boxes
 3. Enter the periods and amounts in the first text box, separated by commas
     1. There should only be one pair separated by commas on each line.
